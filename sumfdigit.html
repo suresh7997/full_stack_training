@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sumofdigit</title>
+    </head>
+    <body>
+        <script>
+            function sum(){
+                let n=324
+                let c=0;
+                while(n>0){
+                    temp=n%10;
+                    c=c+temp;
+                    n=Math.floor(n/10)
+                }
+               document.write(c);
+            }
+            sum()
+            
+                
+        </script>
+    </body>
+</html>

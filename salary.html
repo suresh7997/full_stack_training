@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SALARY</title>
+    </head>
+    <body>
+        <script>
+            function emp(name,age,salary){
+                this.name=name
+                this.age=age
+                this.salary=salary
+
+            }
+            let emp1=new emp("suresh",20,4500)
+            let emp2=new emp("ashok",30,5000)
+            if(emp1.salary>emp2.salary){
+            console.log(`${emp1.name} have highest salary`)
+            }
+            else{
+                console.log(`${emp2.name} have highest salary`)
+            }
+        </script>
+    </body>
+</html>

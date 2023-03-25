@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            arraylargestnumber
+        </title>
+    </head>
+    <body>
+        <script>
+            function arryalargest(){
+                let n=[5,6,9,3,8,3,1]
+                max=n[0]
+                min=n[0]
+                for(let i=0;i<n.length;i++){
+                    if(n[i]>max){
+                        max=n[i]
+
+                    }
+                    else if(n[i]<min){
+                        min=n[i]
+                    }
+                    
+                    
+                }
+                document.write(max,"is the max number in this array\n");
+                document.write(min,"is the min number in this array\n");
+            }
+            arryalargest()
+        </script>
+    </body>
+</html>
