@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>course class</title>
+</head>
+
+<body>
+    <script>
+        class course {
+            constructor(name,Tranier,fee) {
+                this.name = name;
+                this.Tranier = Tranier;
+                this.fee = fee;
+
+            }
+            coursedetails() {
+                if (this.name == "java") {
+                    console.log("Tranier", this.Tranier,"fee",this.fee);
+                    
+                }
+                else if (this.name == "python") {
+                    console.log("Tranier", this.Tranier,"fee",this.fee);
+
+                }
+                else if (this.name == "c") {
+                    console.log("Tranier", this.Tranier,"fee",this.fee);
+
+                }
+                else{
+                    console.log("invalid course");
+                }
+            }
+        }
+        let r=new course("java","ashok",50000);
+        r.coursedetails();
+        let y=new course("python","venky",25000);
+        y.coursedetails();
+
+    </script>
+</body>
+
+</html>
