@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arrayhighestnumber</title>
+
+    </head>
+    <body>
+        <script>
+            class maxx{
+                constructor(a){
+                   this.a=a; 
+                }
+                armin(){
+                    let max=this.a[0];
+                for(let i=0;i<this.a.length;i++){
+                    if(this.a[i]>max)
+                    {
+                        max=this.a[i];
+                    }
+                }
+                document.write(max,"it is a max number in  the array         ");
+
+                    
+                }
+            }
+            let t=new maxx([4,3,5,6,7,2])
+            t.armin();
+            let h=new maxx([2,3,4,5,6,8,1])
+            h.armin();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>class reverse number</title>
+</head>
+
+<body>
+    <script>
+        class reverse {
+            constructor(n) {
+                this.n = n;
+            }
+            rev() {
+                   let d = 0, reve = 0;
+                    while (this.n > 0) {
+                        d = this.n % 10;
+                        reve = reve * 10 + d;
+                        this.n = Math.floor(this.n / 10);
+                    }
+                    console.log("rev", reve)
+
+
+            }
+        }
+        let r = new reverse(123)
+        r.rev();
+        let y=new reverse(567);
+        y.rev();
+    </script>
+</body>
+
+</html>
